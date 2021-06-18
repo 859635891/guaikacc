@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>my webpage</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Instyle Fashion HTML Template">
+	<meta name="keywords" content="instyle, fashion, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/slicknav.min.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+
+	<!-- header section -->
+	<header class="header-section hs-border">
+		<div class="header-warp">
+			<a href="index.html" class="site-logo">
+				<img src="img/logo.png" alt="">
+			</a>
+			<ul class="main-menu">
+				<li><a href="index.html">篮网篇</a></li>
+				<li><a href="gallery.html">勇士篇</a></li>
+				<li><a href="artists.html">欣赏篇</a></li>
+				<li><a href="blog.html">关于NBA</a></li>
+				<li><a href="contact.html">结业报告</a></li>
+			</ul>
+		</div>
+	</header>
+	<h2>《Web应用基础》课程结业报告</h2>
+	<pre><font size="5">
+    本次我做了一个关于NBA我喜欢的球队与球星的内容的网页，其中主页面分为篮网篇，勇士篇，欣赏篇，关于NBA以及结业报告这几个页面，
+分别介绍了两支球队的基本资料以及当家球星等，同时也做了一页关于NBA联盟以及对NBA联盟影响深远的几位球星。
+    使用了bootstrap框架。
+    遇到的问题①：col-?-push-X,col-?-pull-X的用法。
+    解决方法：简单来说，col-??-push-*和col-??-pull-*，主要起改变元素在大屏幕页面上的显示位置的作用，对于手持设备的小屏幕显
+示（也就是堆叠的列的顺序或者说位置），会严格按照html代码的先后顺序显示，那么我们自然就知道用法了：在html里面，把要先显示的内
+容写在前面，后显示的内容写在后面，然后用push和pull对它们在大屏幕上的左右位置进行调整，例子如下：
+    &lt;div class=’col-12 col-sm-9 col-sm-push-3′></div>//这个div占了9个栅格，先写，让它在手持设备上可以先显示，然后用push往右推
+3个栅格，让它在大屏幕显示在右边。
+    &lt;div class=’col-6 col-sm-3 col-sm-pull-9′> //这个div占了3个栅格，后写，让它在手持设备上后显示，然后用ull往左拉9个栅
+格，让它在大屏幕显示在左边。
+    问题②：bootstrap做网页不要轻易定div快的高度，因为bootstrap是移动端优先，若定义了高度，移动端会出现布局混乱，
+需用@media(){}来定义移动端的样式。
+    问题③：导航：鼠标悬浮显示菜单&lt;data-hover="dropdown">
+    解决方法：需引入：bootstrap-hover-dropdown.min,js
+    总结：本次做的页面让我收获颇丰，不仅学习了bootstrap框架的基本知识，还运用到了页面上。而且不懂的许多问题也通过查阅网上资
+料解决了。最重要的是写出来了自己真正感兴趣的页面，在我做完的一刻还有一丝骄傲与喜悦。尽管此次页面做完了，但仍然存在着不足，比
+如第一个页面的footer还做的不够美观，以后我还会继续完善，争取做到一直学下去。
+	</font></pre>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+
+	
+
+	</body>
+</html>
